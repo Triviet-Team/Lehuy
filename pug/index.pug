@@ -1,0 +1,345 @@
+extends _inc
+
+block article
+  .modal.quickview.fade.product-modal-1.show(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle')
+    .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalCenterTitle.modal-title Xem nhanh sản phẩm
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          .row
+            .col-lg-6
+              .modal-img
+                img.main-image.xzoom(src='../img/product-1.png', xoriginal='../img/product-1.png')
+                .xzoom-thumbs
+                  .owl-carousel.xzoom-carousel.owl-theme
+                    .item
+                      a(href='../img/product-1.png')
+                        img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                    .item
+                      a(href='../img/product-2.png')
+                        img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+                    .item
+                      a(href='../img/product-1.png')
+                        img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                    .item
+                      a(href='../img/product-2.png')
+                        img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+                    .item
+                      a(href='../img/product-1.png')
+                        img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                    .item
+                      a(href='../img/product-2.png')
+                        img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+            .col-lg-6
+              .quickview-detail
+                h2 Dao phay mọng finger MH - 370
+                p MSP: MH 307
+                h5
+                  | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                
+              .tags
+                | Thẻ tag: 
+                span 
+                  a(href='#') Dao phay mọng finger LH
+                | ,
+                span 
+                  a(href='#') Chế biến theo công nghệ
+        .modal-footer
+          button.btn.btn-light(type='button', data-dismiss='modal') Đóng
+
+
+
+  article
+    section.slider.d-none.d-sm-block
+      .owl-carousel.slider-carousel.owl-theme
+        .item
+          a(href='san-pham.html')
+            img(src='../img/slider-1.png')
+        .item
+          a(href='san-pham.html')
+            img(src='../img/slider-2.png')
+
+    section.category
+      .box-category.wow.zoomIn
+        img(src='../img/cate-1.png')
+        h4
+          a(href='san-pham.html') Lưỡi cưa LH
+        ul
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+
+      .box-category.wow.zoomIn
+        img(src='../img/cate-2.png')
+        h4
+          a(href='san-pham.html') DAO PHAY MỌNG FINGER LH
+        ul
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+
+      .box-category.wow.zoomIn
+        img(src='../img/cate-3.png')
+        h4
+          a(href='san-pham.html') DAO MIẾNG RỜI (Dao mảnh) - DAO BÀO
+        ul
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+
+      .box-category.wow.zoomIn
+        img(src='../img/cate-4.png')
+        h4
+          a(href='san-pham.html') MŨI PHAY CNC
+        ul
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+
+      .box-category.wow.zoomIn
+        img(src='../img/cate-5.png')
+        h4
+          a(href='san-pham.html') MÁY CHẾ BIẾN GỖ
+        ul
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+
+      .box-category.wow.zoomIn
+        img(src='../img/cate-6.png')
+        h4
+          a(href='san-pham.html') VẬT TƯ NGÀNH GỖ KHÁC
+        ul
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+          li 
+            a(href='san-pham.html') Lưỡi cưa abc xyz
+
+    section.product.new
+      .container-fluid
+        .title-page
+          h1 sản phẩm mới
+
+        .owl-carousel.product-carousel.owl-theme
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-1.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-1.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-2.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-1.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-2.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-1.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-2.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+    section.product.seller
+      .container-fluid
+        .title-page
+          h1 sản phẩm bán chạy
+
+        .owl-carousel.product-carousel.owl-theme
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-2.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-2.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-1.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-1.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-2.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-1.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+
+          .item
+            .box-product
+              .box-product-img
+                a(href='san-pham.html')
+                  img(src='../img/product-2.png')
+                .box-product-img-custom
+                  a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+                      i.mdi.mdi-eye-plus
+              .box-product-detail.text-center
+                h5 MSP: MH-370
+                h4
+                  a(href='chi-tiet-san-pham.html', title='Briggs & Stratton 30W Engine')
+                    | Briggs Stratton 30W Engine
+   

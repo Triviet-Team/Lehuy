@@ -1,0 +1,56 @@
+extends _inc
+
+block article
+  article
+    section.bread-crumb
+      .container-fluid
+        .bc-icons
+          nav(aria-label='breadcrumb')
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href='index.html') Trang chủ
+              li.breadcrumb-item.active Liên hệ
+
+    section.contact-page
+      .container-fluid
+        .title-page
+          h1 Liên hệ
+        .row
+          .col-md-6
+            ul
+              li 
+                i.mdi.mdi-map-marker-radius
+                | Số 1, Đường số 2, Phường 3, Quận 4, TP.HCM
+              li 
+                i.mdi.mdi-phone-in-talk
+                | 0912 345 786
+              li 
+                i.mdi.mdi-email
+                | ctylehuy@gmail.com
+            
+            h3 GỬI THÔNG TIN LIÊN HỆ
+            h5 Quý khách vui lòng nhập đầy đủ thông tin
+            form
+              .form-group.row
+                label.col-sm-3.col-form-label(for='fullname') Hộ tên:
+                .col-sm-9
+                  input#fullname.form-control(type='text')
+              .form-group.row
+                label.col-sm-3.col-form-label(for='email') Email:
+                .col-sm-9
+                  input#email.form-control(type='email')
+              .form-group.row
+                label.col-sm-3.col-form-label(for='tel') Số điện thoại:
+                .col-sm-9
+                  input#tel.form-control(type='tel')
+              .form-group.row
+                label.col-sm-3.col-form-label(for='message') Lời nhắn:
+                .col-sm-9
+                  textarea#message.form-control
+              .row
+                .col-12.text-center
+                  button.btn.btn-primary Gửi liên hệ
+              
+
+          .col-md-6
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.438012831536!2d106.67758941526067!3d10.854251860719291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753028f1e62433%3A0xedbd6e334d7dd8a3!2sL%C3%AA+Huy+-+KWS!5e0!3m2!1svi!2s!4v1551941191086', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
